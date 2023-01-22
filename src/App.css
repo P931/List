@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(42, 43, 43);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.header {
+  margin: 10px 10px;
+  padding: 10px 10px;
+  color: rgb(240, 44, 13);
+  box-shadow: 3px 3px 5px 0px red;
+}
+
+.header:hover {
+  opacity: 0.3px;
+  box-shadow: 3px 3px 5px 0px rgb(0, 30, 255);
+  color: blue;
+  cursor: pointer;
+}
+
+.int {
+  margin: 30px 10px;
+  padding: 11px 10px;
+  width: 500px;
+  height: 40px;
+  border: 2px solid red;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.int:hover {
+  border: 2px solid rgb(64, 0, 255);
+}
+
+.inp {
+  position: relative;
+  left: -10px;
+  top: -13px;
+  width: 415px;
+  height: 55px;
+  border-radius: 43px;
+  border: -4px solid rgb(72, 0, 255);
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.inp:hover {
+  opacity: 0.9;
+  background-color: blue;
+  color: rgb(247, 228, 19);
+}
+
+.search {
+  margin: 9px;
+  position: relative;
+  left: 26px;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.search:hover {
+  color: rgb(241, 237, 12);
+}
+
+.mcontainer {
+  margin: 10px 5px;
+  padding: 10px 5px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+}
+
+.movie {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+.hedyear {
+  background-color: rgb(64, 69, 225);
+  color: aliceblue;
+}
+
+.cardfotr {
+  /* background-color: rgb(241, 14, 14); */
+  color: aliceblue;
+  /* text-align: center; */
+}
+
+.nomovie {
+  color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  height: 50vh;
 }
